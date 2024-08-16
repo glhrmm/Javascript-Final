@@ -18,8 +18,7 @@ const createProductCard = (product) => {
     <h3 class="product-title">${product.title}</h3>
     <p class="product-price">Price: $${product.price}</p>
     <button class="btn">Add to cart</button>
-    </div>
-    `
+    </div>`
     const addToCartBtn = productCard.querySelector('.btn')
     addToCartBtn.addEventListener('click', () => {
       addToCart(product.id)
